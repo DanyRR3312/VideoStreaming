@@ -3,3 +3,26 @@ body{
     min-height: 100dvh;
     grid-template-rows: auto 1fr auto;
 }
+
+.carousel-item {
+    display: none;
+}
+        
+.carousel-item.active {
+    display: block;
+}
+        
+.dot {
+    height: 12px;
+    width: 12px;
+    margin: 0 4px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #717171;
+}
