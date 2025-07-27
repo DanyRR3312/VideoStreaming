@@ -55,7 +55,7 @@ function startAutoPlay() {
     autoPlayInterval = setInterval(() => {
         currentIndex = (currentIndex < carouselItems.length - 1) ? currentIndex + 1 : 0;
         showImage(currentIndex);
-    }, 6000); 
+    }, 9000); 
 }
 
 function resetAutoPlay() {

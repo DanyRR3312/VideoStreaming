@@ -11,7 +11,7 @@
     
     <header class="flex justify-between content-center fixed top-0 left-0 z-50 w-full bg-zinc-800 p-3 text-white">
 
-        <div class="flex content-center text-lg">
+        <div class="flex flex-wrap content-center text-base">
 
             <div class="my-2 mx-4"><h1>VideoStream</h1></div>
             <div class="my-2 mx-4"><h2>Novedades</h2></div>
@@ -33,38 +33,63 @@
 
     <main>
 
-        <section id="carousel" class="bg-black min-h-[60rem] relative">
+        <section id="carousel" class="bg-black h-[50em] relative overflow-hidden">
 
             <div class="carousel-item active">
-                <img src="https://placehold.co/1200x600/FF5733/FFFFFF?text=Imagen+1" alt="Imagen 1" class="w-full h-auto object-cover rounded-lg">
+
+                <img src="https://PreguntasPorMateria-ElsucioDan.b-cdn.net/VideoStreaming/assets/carousel/carousel1.2.png" alt="Imagen 1" class="h-full w-full object-cover rounded-lg">
                 <div class="fade-overlay"></div>
+
             </div>
+
             <div class="carousel-item">
+
                 <img src="https://placehold.co/1200x600/33FF57/FFFFFF?text=Imagen+2" alt="Imagen 2" class="w-full h-auto object-cover rounded-lg">
                 <div class="fade-overlay"></div>
+
             </div>
+
             <div class="carousel-item">
+
                 <img src="https://placehold.co/1200x600/3357FF/FFFFFF?text=Imagen+3" alt="Imagen 3" class="w-full h-auto object-cover rounded-lg">
                 <div class="fade-overlay"></div>
+
             </div>
+
             <div class="carousel-item">
+
                 <img src="https://placehold.co/1200x600/FF33A1/FFFFFF?text=Imagen+4" alt="Imagen 4" class="w-full h-auto object-cover rounded-lg">
                 <div class="fade-overlay"></div>
+
             </div>
 
             <button id="prevBtn" class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-3 rounded-full hover:bg-opacity-75 transition-all duration-300 focus:outline-none">
+                
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
                 </svg>
+
             </button>
 
+            <div id="info" class="absolute top-[15rem] left-20 w-[35rem] text-white">
+
+                <img src="assets/carousel/image1.1.webp" alt="">
+
+                <h2 class="my-2 mx-6">Kaoru Hana wa Rin to Saku</h2>
+
+                <p class="mx-6">La historia se centra en Rintaro Tsumugi, un estudiante de una escuela secundaria para chicos, y Kaoruko Waguri, una estudiante de una escuela secundaria para chicas cercana. A pesar de las diferencias entre sus escuelas y la hostilidad entre ellas, Rintaro y Kaoruko se enamoran y deben navegar por los desafíos de sus mundos separados</p>
+
+                <div id="dotsContainer" class="flex p-4 mx-1"></div>
+
+            </div>
+
             <button id="nextBtn" class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-3 rounded-full hover:bg-opacity-75 transition-all duration-300 focus:outline-none">
+
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                 </svg>
-            </button>
 
-            <div id="dotsContainer" class="flex justify-center p-4"></div>
+            </button>
 
         </section>
 
