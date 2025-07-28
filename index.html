@@ -1,104 +1,121 @@
-<!DOCTYPE html>
-<html lang="es">
+<!doctype html>
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="style/style.css">
-    <title>Video Streaming</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="src/style.css">
+  <title>Video Streaming</title>
 </head>
+
 <body>
-    
-    <header class="flex justify-between content-center fixed top-0 left-0 z-50 w-full bg-zinc-800 p-3 text-white">
 
-        <div class="flex flex-wrap content-center text-base">
+  <header class="flex justify-between content-center fixed top-0 left-0 z-50 w-full bg-zinc-800 p-3 text-white">
 
-            <div class="my-2 mx-4"><h1>VideoStream</h1></div>
-            <div class="my-2 mx-4"><h2>Novedades</h2></div>
-            <div class="my-2 mx-4"><h2>Popular</h2></div>
-            <div class="my-2 mx-4"><h2>Simultcasts</h2></div>
-            <div class="my-2 mx-4"><h2>Categorías</h2></div>
+    <div class="flex flex-wrap content-center text-base">
 
-        </div>
+      <div class="my-2 mx-4">
+        <h1>VideoStream</h1>
+      </div>
+      <div class="my-2 mx-4">
+        <h2>Novedades</h2>
+      </div>
+      <div class="my-2 mx-4">
+        <h2>Popular</h2>
+      </div>
+      <div class="my-2 mx-4">
+        <h2>Simultcasts</h2>
+      </div>
+      <div class="my-2 mx-4">
+        <h2>Categorías</h2>
+      </div>
 
-        <div class="flex content-center">
+    </div>
 
-            <button class="my-3 mx-4"><img src="assets/search.svg" alt=""></button>
+    <div class="flex content-center">
 
-            <div class="border-2 rounded-full border-whithe w-10 h-10  my-1 mx-4"></div>
+      <button class="my-3 mx-4"><img src="assets/search.svg" alt=""></button>
 
-        </div>
+      <div class="border-2 rounded-full border-whithe w-10 h-10  my-1 mx-4"></div>
 
-    </header>
+    </div>
 
-    <main>
+  </header>
 
-        <section id="carousel" class="bg-black h-[50em] relative overflow-hidden">
+  <main>
 
-            <div class="carousel-item active">
+    <section id="carousel" class="bg-black h-[50em] relative overflow-hidden">
 
-                <img src="https://PreguntasPorMateria-ElsucioDan.b-cdn.net/VideoStreaming/assets/carousel/carousel1.2.png" alt="Imagen 1" class="h-full w-full object-cover rounded-lg">
-                <div class="fade-overlay"></div>
+      <div class="carousel-item active">
 
-            </div>
+        <img src="https://PreguntasPorMateria-ElsucioDan.b-cdn.net/VideoStreaming/assets/carousel/carousel1.2.png"
+          alt="Imagen 1" class="h-full w-full object-cover rounded-lg">
+        <div class="fade-overlay"></div>
 
-            <div class="carousel-item">
+      </div>
 
-                <img src="https://placehold.co/1200x600/33FF57/FFFFFF?text=Imagen+2" alt="Imagen 2" class="w-full h-auto object-cover rounded-lg">
-                <div class="fade-overlay"></div>
+      <div class="carousel-item">
 
-            </div>
+        <img src="https://placehold.co/1200x600/33FF57/FFFFFF?text=Imagen+2" alt="Imagen 2"
+          class="w-full h-auto object-cover rounded-lg">
+        <div class="fade-overlay"></div>
 
-            <div class="carousel-item">
+      </div>
 
-                <img src="https://placehold.co/1200x600/3357FF/FFFFFF?text=Imagen+3" alt="Imagen 3" class="w-full h-auto object-cover rounded-lg">
-                <div class="fade-overlay"></div>
+      <div class="carousel-item">
 
-            </div>
+        <img src="https://placehold.co/1200x600/3357FF/FFFFFF?text=Imagen+3" alt="Imagen 3"
+          class="w-full h-auto object-cover rounded-lg">
+        <div class="fade-overlay"></div>
 
-            <div class="carousel-item">
+      </div>
 
-                <img src="https://placehold.co/1200x600/FF33A1/FFFFFF?text=Imagen+4" alt="Imagen 4" class="w-full h-auto object-cover rounded-lg">
-                <div class="fade-overlay"></div>
+      <div class="carousel-item">
 
-            </div>
+        <img src="https://placehold.co/1200x600/FF33A1/FFFFFF?text=Imagen+4" alt="Imagen 4"
+          class="w-full h-auto object-cover rounded-lg">
+        <div class="fade-overlay"></div>
 
-            <button id="prevBtn" class="absolute top-1/2 left-4 z-20 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-3 rounded-full hover:bg-opacity-75 transition-all duration-300 focus:outline-none">
-                
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-                </svg>
+      </div>
 
-            </button>
+      <button id="prevBtn"
+        class="absolute top-1/2 left-4 z-20 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-3 rounded-full hover:bg-opacity-75 transition-all duration-300 focus:outline-none">
 
-            <div id="info" class="absolute top-[15rem] left-20 z-20 w-[35rem] text-white">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+        </svg>
 
-                <img src="" alt="">
+      </button>
 
-                <h2 class="my-2 mx-6"></h2>
+      <div id="info" class="absolute top-[15rem] left-20 z-20 w-[35rem] text-white">
 
-                <p class="mx-6"></p>
+        <img src="" alt="">
 
-                <div id="dotsContainer" class="flex p-4 mx-1"></div>
+        <h2 class="my-2 mx-6"></h2>
 
-            </div>
+        <p class="mx-6"></p>
 
-            <button id="nextBtn" class="absolute top-1/2 right-4 z-20 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-3 rounded-full hover:bg-opacity-75 transition-all duration-300 focus:outline-none">
+        <div id="dotsContainer" class="flex p-4 mx-1"></div>
 
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                </svg>
+      </div>
 
-            </button>
+      <button id="nextBtn"
+        class="absolute top-1/2 right-4 z-20 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-3 rounded-full hover:bg-opacity-75 transition-all duration-300 focus:outline-none">
 
-        </section>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
 
-    </main>
+      </button>
 
-    <footer></footer>
+    </section>
 
-    <script type="module" src="script/main.js"></script>
+  </main>
 
+  <footer></footer>
 
+  <script type="module" src="/src/main.js"></script>
 </body>
+
 </html>
