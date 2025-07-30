@@ -11,23 +11,25 @@
 
 <body>
 
-  <header class="flex justify-between content-center fixed top-0 left-0 z-50 w-full bg-zinc-800 p-3 text-white">
+  <header class="flex justify-between content-center fixed top-0 left-0 z-50 w-full bg-zinc-800 p-3 text-white md:p-2">
 
-    <div class="flex flex-wrap content-center text-base 2xl:text-lg xl:text-sm">
+    <div class="flex flex-wrap content-center p-1 font-medium text-base xl:text-lg">
+
+      <button class="mx-3 hidden sm:flex lg:hidden"><img src="assets/menu.svg" alt="IMG menu"></button>
 
       <div class="my-2 mx-4">
         <h1>VideoStream</h1>
       </div>
-      <div class="my-2 mx-4">
+      <div class="my-2 mx-4 hidden lg:flex">
         <h2>Novedades</h2>
       </div>
-      <div class="my-2 mx-4">
+      <div class="my-2 mx-4 hidden lg:flex">
         <h2>Popular</h2>
       </div>
-      <div class="my-2 mx-4">
+      <div class="my-2 mx-4 hidden lg:flex">
         <h2>Simultcasts</h2>
       </div>
-      <div class="my-2 mx-4">
+      <div class="my-2 mx-4 hidden sm:flex">
         <h2>Categorías</h2>
       </div>
 
@@ -35,9 +37,9 @@
 
     <div class="flex content-center">
 
-      <button class="my-3 mx-4"><img src="assets/search.svg" alt="IMGSearch"></button>
+      <button class="mx-4 md:my-2 md:w-[1.5rem] md:h-[1.5rem] lg:h-7 lg:w-7 2xl:h-8 2xl:w-8 lg:my-3"><img src="assets/search.svg" alt="IMGSearch"></button>
 
-      <div class="border-2 rounded-full border-whithe w-10 h-10 my-1 mx-4 2xl:w-12 2xl:h-12"></div>
+      <div class="border-2 rounded-full border-whithe w-8 h-8 my-1 mx-4 lg:w-11 lg:h-11 2xl:h-12 2xl:w-12"></div>
 
     </div>
 
@@ -45,13 +47,15 @@
 
   <main>
 
-    <section id="carousel" class="md:h-[40em] lg:h-[45em] xl:h-[48em] 2xl:h-[60em] bg-black  relative overflow-hidden">
+    <section id="carousel" class="sm:h-[50rem] md:h-[38em] lg:h-[45em] xl:h-[51em] 2xl:h-[58em] bg-black relative overflow-hidden">
 
       <div class="carousel-item active">
 
         <img src="https://PreguntasPorMateria-ElsucioDan.b-cdn.net/VideoStreaming/assets/carousel/carousel1.png"
-          alt="Imagen 1" class="h-full w-full object-cover rounded-lg">
+          alt="Portada para computadoras" class="h-full w-full object-cover rounded-lg hidden md:flex">
         <div class="fade-overlay"></div>
+
+        <img src="https://PreguntasPorMateria-ElsucioDan.b-cdn.net/VideoStreaming/assets/carousel/imagen.webp" alt="Portada para telefonos" class="md:hidden h-full w-full object-cover">
 
       </div>
 
@@ -80,30 +84,32 @@
       </div>
 
       <button id="prevBtn"
-        class="absolute top-1/2 left-4 z-20 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-3 rounded-full hover:bg-opacity-75 transition-all duration-300 focus:outline-none">
+        class="absolute top-1/2 left-4 z-20 transform -translate-y-1/2 bg-[0, 0, 0, 0.342] text-white p-2 rounded-full hover:bg-opacity-75 transition-all duration-300 focus:outline-none">
 
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <svg xmlns="http://www.w3.org/2000/svg" class="md:h-8 md:w-8 lg:h-10 lg:w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
         </svg>
 
       </button>
 
-      <div id="info" class="absolute top-[15rem] left-20 z-20 w-[35rem] text-white lg:w-[25rem] xl:w-[30rem] 2xl:w-[35rem] 2xl:text-lg">
+      <div id="info" class="absolute z-20 w-[20rem] text-white md:-translate-x-0 md:-translate-y-0 md:bottom-[12rem] md:left-18 md:w-[18rem] lg:top-[10rem] lg:left-20 lg:w-[25rem] lg:text-lg xl:top-[13rem] xl:w-[30rem] 2xl:top-[15rem] 2xl:w-[35rem]">
 
-        <img src="" alt="Nombre de la Serie/Pelicula">
+        <img src="" alt="Nombre de la Serie/Pelicula" id="IMG-name">
 
-        <h2 class="my-2 mx-6 2xl:text-2xl"></h2>
+        <h2></h2>
 
-        <p class="mx-6"></p>
+        <p></p>
 
         <div id="dotsContainer" class="flex p-4 mx-1"></div>
+
+        <button></button>
 
       </div>
 
       <button id="nextBtn"
-        class="absolute top-1/2 right-4 z-20 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-3 rounded-full hover:bg-opacity-75 transition-all duration-300 focus:outline-none">
+        class="absolute top-1/2 right-4 z-20 transform -translate-y-1/2 [background:rgba(0, 0, 0, 0.342)] text-white p-2 rounded-full hover:bg-opacity-75 transition-all duration-300 focus:outline-none">
 
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <svg xmlns="http://www.w3.org/2000/svg" class="md:h-8 md:w-8 lg:h-10 lg:w-10" fill="none" viewBox="0 0 24 24" stroke="white">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
         </svg>
 
