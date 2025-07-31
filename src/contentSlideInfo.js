@@ -10,9 +10,9 @@ export const slideData = [
     },
 
     {
-        img: 'https://PreguntasPorMateria-ElsucioDan.b-cdn.net/VideoStreaming/assets/InfoBanner/img1.webp',
-        title: 'Shangri-La Frontier',
-        desc: 'Rakuro enfrenta enemigos en un mundo post-apocalíptico...',
+        img: 'https://PreguntasPorMateria-ElsucioDan.b-cdn.net/VideoStreaming/assets/InfoBanner/output.webp',
+        title: 'Kyoukai no Kanata',
+        desc: 'La historia se centra en Akihito Kanbara, un estudiante de secundaria que es mitad Youmu e inmortal, y Mirai Kuriyama, una Guerrera del Mundo Espiritual con el poder de manipular la sangre. Sus vidas se entrelazan después de que Akihito salva a Mirai de suicidarse, desencadenando una serie de eventos que los obligan a enfrentar su destino.',
     },
 
     {

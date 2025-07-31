@@ -76,9 +76,42 @@ nextBtn.addEventListener('click', () => {
 
 });
 
-export function initCarousel() {
+// ...existing code...
 
+export function initCarousel() {
     showImage(currentIndex);
     startAutoPlay();
 
+    // Soporte para swipe en móvil
+    const carousel = document.getElementById('carousel');
+    let startX = 0;
+    let endX = 0;
+
+    carousel.addEventListener('touchstart', (e) => {
+        startX = e.touches[0].clientX;
+    });
+
+    carousel.addEventListener('touchmove', (e) => {
+        endX = e.touches[0].clientX;
+    });
+
+    carousel.addEventListener('touchend', () => {
+        if (startX && endX) {
+            const diff = startX - endX;
+            if (Math.abs(diff) > 50) { // Umbral para swipe
+                if (diff > 0) {
+                    // Swipe izquierda (siguiente)
+                    currentIndex = (currentIndex < carouselItems.length - 1) ? currentIndex + 1 : 0;
+                } else {
+                    // Swipe derecha (anterior)
+                    currentIndex = (currentIndex > 0) ? currentIndex - 1 : carouselItems.length - 1;
+                }
+                showImage(currentIndex);
+                resetAutoPlay();
+            }
+        }
+        startX = 0;
+        endX = 0;
+    });
 }
+// ...existing code...
