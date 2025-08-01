@@ -11,8 +11,7 @@
 
 <body class="bg-black">
 
-  <header id="header"
-    class="flex justify-between content-center fixed top-0 left-0 z-50 w-full md:bg-zinc-800 p-3 text-white md:p-2">
+  <header id="header" class="flex justify-between content-center fixed top-0 left-0 z-50 w-full md:bg-zinc-800 p-3 text-white md:p-2">
 
     <div class="flex flex-wrap content-center p-1 font-medium text-base xl:text-lg">
 
@@ -38,8 +37,7 @@
 
     <div class="flex content-center">
 
-      <button class="mx-4 md:my-2 md:w-[1.5rem] md:h-[1.5rem] lg:h-7 lg:w-7 2xl:h-8 2xl:w-8 lg:my-3"><img
-          src="assets/search.svg" alt="IMGSearch"></button>
+      <button class="mx-4 md:my-2 md:w-[1.5rem] md:h-[1.5rem] lg:h-7 lg:w-7 2xl:h-8 2xl:w-8 lg:my-3"><img src="assets/search.svg" alt="IMGSearch"></button>
 
       <div class="border-2 rounded-full border-whithe w-8 h-8 my-1 mx-4 lg:w-11 lg:h-11 2xl:h-12 2xl:w-12"></div>
 
@@ -49,59 +47,55 @@
 
   <main>
 
-    <section id="carousel"
-      class="sm:h-[50rem] md:h-[38em] lg:h-[45em] xl:h-[51em] 2xl:h-[58em] bg-black relative overflow-hidden">
+    <section id="carousel" class="sm:h-[50rem] md:h-[38em] lg:h-[45em] xl:h-[51em] 2xl:h-[58em] bg-black relative overflow-hidden">
 
       <div class="carousel-item active">
 
-        <img src="https://PreguntasPorMateria-ElsucioDan.b-cdn.net/VideoStreaming/assets/carousel/carousel1.png"
-          alt="Portada para computadoras" class="h-full w-full object-cover rounded-lg hidden md:flex">
-        <div class="fade-overlay"></div>
+        <img src="https://PreguntasPorMateria-ElsucioDan.b-cdn.net/VideoStreaming/assets/carousel/carousel1.png" alt="Portada para computadoras" class="h-full w-full object-cover rounded-lg hidden md:flex">
 
-        <img src="https://PreguntasPorMateria-ElsucioDan.b-cdn.net/VideoStreaming/assets/carousel/imagen.webp"
-          alt="Portada para telefonos" class="md:hidden h-full w-full object-cover">
+        <img src="https://PreguntasPorMateria-ElsucioDan.b-cdn.net/VideoStreaming/assets/carousel/imagen.webp" alt="Portada para telefonos" class="md:hidden h-full w-full object-cover">
 
-      </div>
-
-      <div class="carousel-item">
-
-        <img src="https://PreguntasPorMateria-ElsucioDan.b-cdn.net/VideoStreaming/assets/carousel/output.webp"
-          alt="Imagen 2" class="w-full h-auto object-cover rounded-lg hidden md:flex">
-        <div class="fade-overlay"></div>
-
-        <img src="https://PreguntasPorMateria-ElsucioDan.b-cdn.net/VideoStreaming/assets/carousel/output2.webp"
-          alt="Portada para telefonos" class="md:hidden h-full w-full object-cover">
-
-      </div>
-
-      <div class="carousel-item">
-
-        <img src="https://placehold.co/1200x600/3357FF/FFFFFF?text=Imagen+3" alt="Imagen 3"
-          class="w-full h-auto object-cover rounded-lg">
         <div class="fade-overlay"></div>
 
       </div>
 
       <div class="carousel-item">
 
-        <img src="https://placehold.co/1200x600/FF33A1/FFFFFF?text=Imagen+4" alt="Imagen 4"
-          class="w-full h-auto object-cover rounded-lg">
+        <img src="https://PreguntasPorMateria-ElsucioDan.b-cdn.net/VideoStreaming/assets/carousel/output.webp" alt="Imagen 2" class="w-full h-auto object-cover rounded-lg hidden md:flex">
+
+        <img src="https://PreguntasPorMateria-ElsucioDan.b-cdn.net/VideoStreaming/assets/carousel/output2.webp" alt="Portada para telefonos" class="md:hidden h-full w-full object-cover">
+
         <div class="fade-overlay"></div>
 
       </div>
 
-      <button id="prevBtn"
-        class="absolute top-1/2 left-4 z-20 transform -translate-y-1/2 bg-[0, 0, 0, 0.342] text-white p-2 rounded-full hover:bg-opacity-75 transition-all duration-300 focus:outline-none">
+      <div class="carousel-item">
 
-        <svg xmlns="http://www.w3.org/2000/svg" class="md:h-8 md:w-8 lg:h-10 lg:w-10" fill="none" viewBox="0 0 24 24"
-          stroke="currentColor">
+        <img src="https://placehold.co/1200x600/3357FF/FFFFFF?text=Imagen+3" alt="Imagen 3" class="w-full h-auto object-cover rounded-lg">
+
+        <div class="fade-overlay"></div>
+
+      </div>
+
+      <div class="carousel-item">
+
+        <img src="https://placehold.co/1200x600/FF33A1/FFFFFF?text=Imagen+4" alt="Imagen 4" class="w-full h-auto object-cover rounded-lg">
+
+        <div class="fade-overlay"></div>
+
+      </div>
+
+      <button id="prevBtn" class="absolute top-1/2 left-4 z-20 transform -translate-y-1/2 bg-[0, 0, 0, 0.342] text-white p-2 rounded-full hover:bg-opacity-75 transition-all duration-300 focus:outline-none">
+
+        <svg xmlns="http://www.w3.org/2000/svg" class="md:h-8 md:w-8 lg:h-10 lg:w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+
         </svg>
 
       </button>
 
-      <div id="info"
-        class="absolute z-20 w-[20rem] text-white max-md:w-full max-md:p-3 md:-translate-x-0 md:-translate-y-0 md:bottom-[12rem] md:left-18 md:w-[18rem] lg:bottom-[10rem] lg:left-20 lg:w-[25rem] lg:text-lg xl:bottom-[13rem] xl:w-[30rem] 2xl:bottom-[15rem] 2xl:w-[35rem]">
+      <div id="info" class="absolute z-20 w-[20rem] text-white max-md:w-full max-md:p-3 md:-translate-x-0 md:-translate-y-0 md:bottom-[12rem] md:left-18 md:w-[18rem] lg:bottom-[10rem] lg:left-20 lg:w-[25rem] lg:text-lg xl:bottom-[13rem] xl:w-[30rem] 2xl:bottom-[15rem] 2xl:w-[35rem]">
 
         <img src="" alt="" id="IMG-name">
 
@@ -115,12 +109,12 @@
 
       <div id="dotsContainer" class="flex p-4 mx-1"></div>
 
-      <button id="nextBtn"
-        class="absolute top-1/2 right-4 z-20 transform -translate-y-1/2 [background:rgba(0, 0, 0, 0.342)] text-white p-2 rounded-full hover:bg-opacity-75 transition-all duration-300 focus:outline-none">
+      <button id="nextBtn" class="absolute top-1/2 right-4 z-20 transform -translate-y-1/2 [background:rgba(0, 0, 0, 0.342)] text-white p-2 rounded-full hover:bg-opacity-75 transition-all duration-300 focus:outline-none">
 
-        <svg xmlns="http://www.w3.org/2000/svg" class="md:h-8 md:w-8 lg:h-10 lg:w-10" fill="none" viewBox="0 0 24 24"
-          stroke="white">
+        <svg xmlns="http://www.w3.org/2000/svg" class="md:h-8 md:w-8 lg:h-10 lg:w-10" fill="none" viewBox="0 0 24 24" stroke="white">
+
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+
         </svg>
 
       </button>
@@ -135,29 +129,60 @@
 
         <div class="relative">
 
-          <button id="prevBtn"
-            class="absolute left-0 top-1/2 -translate-y-1/2 bg-gray-700 hover:bg-gray-600 text-white p-3 rounded-full shadow-lg z-10 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-75 transition-all duration-300">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-              stroke="currentColor">
+          <button id="prevBtn" class="absolute left-0 top-1/2 -translate-y-1/2 bg-gray-700 hover:bg-gray-600 text-white p-3 rounded-full shadow-lg z-10 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-75 transition-all duration-300">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+
             </svg>
+
           </button>
 
-          <div id="carousel-rec"
-            class="flex overflow-x-scroll scroll-smooth hide-scroll-bar py-4 px-2 relative carousel-container"
-            style="-ms-overflow-style: none; scrollbar-width: none;">
+          <div id="carousel-rec" class="flex overflow-x-scroll scroll-smooth hide-scroll-bar py-4 px-2 relative carousel-container" style="-ms-overflow-style: none; scrollbar-width: none;">
 
-            <div
-              class="flex-none w-64 mr-4 bg-gray-800 rounded-lg shadow-md overflow-hidden transform transition-transform duration-300 hover:scale-105">
-              <img src="https://placehold.co/256x144/2c5282/ffffff?text=Anime+1" alt="Anime 1"
-                class="w-full h-36 object-cover">
-              <div class="p-4">
-                <h3 class="text-lg font-semibold text-white mb-2">Ataque a los Titanes</h3>
-                <p class="text-sm text-gray-400">La humanidad lucha por sobrevivir contra gigantes humanoides.</p>
-                <button
-                  class="mt-3 w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md transition-colors duration-200">Ver
-                  ahora</button>
+            <!-- Elemento 1 -->
+
+            <div class="flex-none h-[32rem] w-[22rem] mr-4 bg-gray-800 rounded-lg shadow-md overflow-hidden transform transition-transform duration-300 hover:scale-105">
+              
+              <div class="w-full h-full">
+
+                <img src="https://PreguntasPorMateria-ElsucioDan.b-cdn.net/VideoStreaming/assets/ListingsSeries/Kaoru%20Hana%20wa%20Rin%20to%20Saku/thumbnail.webp" alt="Anime 1" class="w-full h-full object-cover">
+
               </div>
+
+              <div class="p-4">
+
+                <h3 class="text-lg font-semibold text-white mb-2">Ataque a los Titanes</h3>
+
+                <p class="text-sm text-gray-400">La humanidad lucha por sobrevivir contra gigantes humanoides.</p>
+
+                <button class="z-20 bottom-0 mt-3 w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md transition-colors duration-200">Ver ahora</button>
+
+              </div>
+
+            </div>
+
+            <!-- Elemento 2 -->
+
+            <div class="flex-none h-[32rem] w-[22rem] mr-4 bg-gray-800 rounded-lg shadow-md overflow-hidden transform transition-transform duration-300 hover:scale-105">
+              
+              <div class="w-full h-full">
+
+                <img src="https://PreguntasPorMateria-ElsucioDan.b-cdn.net/VideoStreaming/assets/ListingsSeries/Kyoukai%20no%20Kanata/thumbnail.webp" alt="Anime 1" class="w-full h-full object-cover">
+
+              </div>
+
+              <div class="p-4">
+
+                <h3 class="text-lg font-semibold text-white mb-2">Ataque a los Titanes</h3>
+
+                <p class="text-sm text-gray-400">La humanidad lucha por sobrevivir contra gigantes humanoides.</p>
+
+                <button class="mt-3 w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md transition-colors duration-200">Ver ahora</button>
+
+              </div>
+
             </div>
 
           </div>
