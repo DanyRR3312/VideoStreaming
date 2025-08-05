@@ -18,21 +18,39 @@ export function renderRecommended() {
   const container = document.getElementById("carousel-rec");
   container.innerHTML = "";
 
-  const items = getRandomItems(recommendedList, 6); // Cambia 6 por la cantidad que quieras mostrar
+  const items = getRandomItems(recommendedList, 10); // Cambia 6 por la cantidad que quieras mostrar
 
   items.forEach(item => {
     const div = document.createElement("div");
-    div.className = "flex-none h-[32rem] w-[22rem] mr-4 bg-gray-800 rounded-lg shadow-md overflow-hidden transform transition-transform duration-300 hover:scale-105";
+    div.className = "recommended-card flex-none h-[28rem] w-[18rem] mr-6 bg-gray-800 rounded-lg shadow-md overflow-hidden transform transition-transform duration-300 hover:scale-105";
     div.innerHTML = `
-      <div class="w-full h-full">
-        <img src="${item.img}" alt="${item.title}" class="w-full h-full object-cover">
-      </div>
-      <div class="p-4">
-        <h3 class="text-lg font-semibold text-white mb-2">${item.title}</h3>
-        <p class="text-sm text-gray-400">${item.desc}</p>
-        <a href="${item.link}" class="z-20 bottom-0 mt-3 w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md transition-colors duration-200 block text-center">Ver ahora</a>
+      <div class="img-container w-full h-full relative">
+        <img src="${item.img}" alt="${item.title}" class="recommended-img object-cover transition-all duration-300" />
+        <div class="recommended-title-overlay transition-all duration-300">
+          <h3 class="text-xl font-bold">${item.title}</h3>
+          <p class="text-sm">${item.sub}</p>
+        </div>
+        <div class="recommended-desc flex flex-col">
+          <h3 class="font-semibold text-sm mb-2">${item.title}</h3>
+          <span class="text-sm">${item.desc}</span>
+          <a href="${item.link}" class="bg-black text-white w-fit py-2 px-6 text-sm rounded-md">Comenzar ${item.start}</a>
+        </div>
       </div>
     `;
     container.appendChild(div);
   });
+
+  const prevBtn = document.getElementById("prevBtn-Rec");
+  const nextBtn = document.getElementById("nextBtn-Rec");
+
+  // El scroll por tarjeta (ajusta el valor si cambias el ancho de las tarjetas)
+  const cardWidth = 18 * 16 + 24; // 18rem * 16px + mr-6 (1.5rem * 16px)
+
+  prevBtn.onclick = () => {
+    container.scrollBy({ left: -cardWidth, behavior: "smooth" });
+  };
+  nextBtn.onclick = () => {
+    container.scrollBy({ left: cardWidth, behavior: "smooth" });
+  };
+
 }
