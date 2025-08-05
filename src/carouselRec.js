@@ -24,19 +24,19 @@ export function renderRecommended() {
     const div = document.createElement("div");
     div.className = "recommended-card flex-none h-[28rem] w-[18rem] mr-6 bg-gray-800 rounded-lg shadow-md overflow-hidden transform transition-transform duration-300 hover:scale-105";
     div.innerHTML = `
-      <div class="img-container w-full h-full relative">
-        <img src="${item.img}" alt="${item.title}" class="recommended-img object-cover transition-all duration-300" />
-        <div class="recommended-title-overlay transition-all duration-300">
-          <h3 class="text-xl font-bold">${item.title}</h3>
-          <p class="text-sm">${item.sub}</p>
-        </div>
-        <div class="recommended-desc flex flex-col">
-          <h3 class="font-semibold text-sm mb-2">${item.title}</h3>
-          <span class="text-sm">${item.desc}</span>
-          <a href="${item.link}" class="bg-black text-white w-fit py-2 px-6 text-sm rounded-md">Comenzar ${item.start}</a>
-        </div>
+    <div class="img-container w-full h-full relative">
+      <img src="${item.img}" alt="${item.title}" class="recommended-img object-cover transition-all duration-300" />
+      <div class="recommended-title-overlay transition-all duration-300">
+        <h3 class="text-xl font-bold">${item.title}</h3>
+        <p class="text-sm">${item.sub}</p>
       </div>
-    `;
+      <div class="recommended-desc flex flex-col">
+        <h3 class="font-semibold text-sm mb-2">${item.title}</h3>
+        <span class="text-sm">${item.desc}</span>
+        <a href="${item.link}" class="btn-comenzar flex content-center bg-black text-white py-2 px-4 text-sm rounded-md absolute left-4 bottom-4"><img src="assets/play.svg" alt="play" class="mr-2"> ${item.start}</a>
+      </div>
+    </div>
+  `;
     container.appendChild(div);
   });
 

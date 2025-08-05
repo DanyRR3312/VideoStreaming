@@ -7,7 +7,7 @@ export const recommendedList = [
         title: 'Kaoru Hana wa Rin to Saku',
         desc: 'La historia se centra en Rintaro Tsumugi, un estudiante de una escuela secundaria para chicos, y Kaoruko Waguri, una estudiante de una escuela secundaria para chicas cercana. A pesar de las diferencias entre sus escuelas y la hostilidad entre ellas, Rintaro y Kaoruko se enamoran y deben navegar por los desafíos de sus mundos separados',
         sub: 'Sub | Dob',
-        start: 'Ep1-T1',
+        start: 'S1-E1',
         link: '#'
     },
 
@@ -16,7 +16,7 @@ export const recommendedList = [
         title: 'Kyoukai no Kanata',
         desc: 'La historia se centra en Akihito Kanbara, un estudiante de secundaria que es mitad Youmu e inmortal, y Mirai Kuriyama, una Guerrera del Mundo Espiritual con el poder de manipular la sangre. Sus vidas se entrelazan después de que Akihito salva a Mirai de suicidarse, desencadenando una serie de eventos que los obligan a enfrentar su destino.',
         sub: 'Sub | Dob',
-        start: 'Ep1-T1',
+        start: 'S1-E1',
         link: '#'
     },
 
@@ -25,7 +25,7 @@ export const recommendedList = [
         title: 'Kyoukai no Kanata',
         desc: 'La historia se centra en Akihito Kanbara, un estudiante de secundaria que es mitad Youmu e inmortal, y Mirai Kuriyama, una Guerrera del Mundo Espiritual con el poder de manipular la sangre. Sus vidas se entrelazan después de que Akihito salva a Mirai de suicidarse, desencadenando una serie de eventos que los obligan a enfrentar su destino.',
         sub: 'Sub',
-        start: 'Ep1-T1',
+        start: 'S1-E1',
         link: '#'
     },
 
@@ -34,7 +34,7 @@ export const recommendedList = [
         title: 'Kyoukai no Kanata',
         desc: 'La historia se centra en Akihito Kanbara, un estudiante de secundaria que es mitad Youmu e inmortal, y Mirai Kuriyama, una Guerrera del Mundo Espiritual con el poder de manipular la sangre. Sus vidas se entrelazan después de que Akihito salva a Mirai de suicidarse, desencadenando una serie de eventos que los obligan a enfrentar su destino.',
         sub: 'Sub',
-        start: 'Ep1-T1',
+        start: 'S1-E1',
         link: '#'
     },
 
@@ -43,7 +43,7 @@ export const recommendedList = [
         title: 'Kyoukai no Kanata',
         desc: 'La historia se centra en Akihito Kanbara, un estudiante de secundaria que es mitad Youmu e inmortal, y Mirai Kuriyama, una Guerrera del Mundo Espiritual con el poder de manipular la sangre. Sus vidas se entrelazan después de que Akihito salva a Mirai de suicidarse, desencadenando una serie de eventos que los obligan a enfrentar su destino.',
         sub: 'Sub | Dob',
-        start: 'Ep1-T1',
+        start: 'E1-T1',
         link: '#'
     },
 
@@ -52,7 +52,7 @@ export const recommendedList = [
         title: 'Kyoukai no Kanata',
         desc: 'La historia se centra en Akihito Kanbara, un estudiante de secundaria que es mitad Youmu e inmortal, y Mirai Kuriyama, una Guerrera del Mundo Espiritual con el poder de manipular la sangre. Sus vidas se entrelazan después de que Akihito salva a Mirai de suicidarse, desencadenando una serie de eventos que los obligan a enfrentar su destino.',
         sub: 'Sub | Dob',
-        start: 'Ep1-T1',
+        start: 'E1-T1',
         link: '#'
     },
 
@@ -61,7 +61,7 @@ export const recommendedList = [
         title: 'Kyoukai no Kanata',
         desc: 'La historia se centra en Akihito Kanbara, un estudiante de secundaria que es mitad Youmu e inmortal, y Mirai Kuriyama, una Guerrera del Mundo Espiritual con el poder de manipular la sangre. Sus vidas se entrelazan después de que Akihito salva a Mirai de suicidarse, desencadenando una serie de eventos que los obligan a enfrentar su destino.',
         sub: 'Sub',
-        start: 'Ep1-T1',
+        start: 'E1-T1',
         link: '#'
     },
 
@@ -70,7 +70,7 @@ export const recommendedList = [
         title: 'Kaoru Hana wa Rin to Saku',
         desc: 'La historia se centra en Rintaro Tsumugi, un estudiante de una escuela secundaria para chicos, y Kaoruko Waguri, una estudiante de una escuela secundaria para chicas cercana. A pesar de las diferencias entre sus escuelas y la hostilidad entre ellas, Rintaro y Kaoruko se enamoran y deben navegar por los desafíos de sus mundos separados',
         sub: 'Sub',
-        start: 'Ep1-T1',
+        start: 'E1-T1',
         link: '#'
     },
 
@@ -79,7 +79,7 @@ export const recommendedList = [
         title: 'Kaoru Hana wa Rin to Saku',
         desc: 'La historia se centra en Rintaro Tsumugi, un estudiante de una escuela secundaria para chicos, y Kaoruko Waguri, una estudiante de una escuela secundaria para chicas cercana. A pesar de las diferencias entre sus escuelas y la hostilidad entre ellas, Rintaro y Kaoruko se enamoran y deben navegar por los desafíos de sus mundos separados',
         sub: 'Sub | Dob',
-        start: 'Ep1-T1',
+        start: 'E1-T1',
         link: '#'
     },
 
@@ -88,7 +88,7 @@ export const recommendedList = [
         title: 'Kaoru Hana wa Rin to Saku',
         desc: 'La historia se centra en Rintaro Tsumugi, un estudiante de una escuela secundaria para chicos, y Kaoruko Waguri, una estudiante de una escuela secundaria para chicas cercana. A pesar de las diferencias entre sus escuelas y la hostilidad entre ellas, Rintaro y Kaoruko se enamoran y deben navegar por los desafíos de sus mundos separados',
         sub: 'Sub | Dob',
-        start: 'Ep1-T1',
+        start: 'E1-T1',
         link: '#'
     },
 
@@ -97,7 +97,7 @@ export const recommendedList = [
         title: 'Kaoru Hana wa Rin to Saku',
         desc: 'La historia se centra en Rintaro Tsumugi, un estudiante de una escuela secundaria para chicos, y Kaoruko Waguri, una estudiante de una escuela secundaria para chicas cercana. A pesar de las diferencias entre sus escuelas y la hostilidad entre ellas, Rintaro y Kaoruko se enamoran y deben navegar por los desafíos de sus mundos separados',
         sub: 'Sub',
-        start: 'Ep1-T1',
+        start: 'E1-T1',
         link: '#'
     },
 
