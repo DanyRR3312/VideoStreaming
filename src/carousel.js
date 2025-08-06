@@ -76,7 +76,7 @@ nextBtn.addEventListener('click', () => {
 
 });
 
-// ...existing code...
+
 
 export function initCarousel() {
     showImage(currentIndex);
@@ -114,4 +114,3 @@ export function initCarousel() {
         endX = 0;
     });
 }
-// ...existing code...
