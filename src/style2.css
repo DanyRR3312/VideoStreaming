@@ -1,0 +1,29 @@
+body {
+  display: grid;
+  min-height: 100dvh;
+  grid-template-rows: auto 1fr auto;
+  overflow-x: clip;
+}
+
+.fade-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image:
+    linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, .3) 30%, rgba(0, 0, 0, 0) 100%),
+    linear-gradient(to top, rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, .2) 55%, rgba(0, 0, 0, 0) 100%);
+  pointer-events: none;
+}
+
+@media (min-width: 1800px) {
+
+
+  #info {
+    bottom: 10rem;
+    left: 5rem;
+  }
+
+  
+}
